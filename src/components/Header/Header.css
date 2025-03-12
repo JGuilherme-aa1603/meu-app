@@ -1,0 +1,38 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #212121;
+}
+
+.userImage__container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  margin-right: 77px;
+}
+
+#search {
+  flex: 1;
+  max-width: 30%;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e9ecef;
+}
+
+#login__button {
+  width: 10%;
+  height: 3rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #2352FF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
