@@ -97,12 +97,12 @@
 
     .login__modal {
         width: 85vw;
-        height: 75vh;
+        height: 65vh;
     }
 
     .login__content {
         width: 84vw;
-        height: 74.5vh;
+        height: 64.5vh;
     }
     
 }

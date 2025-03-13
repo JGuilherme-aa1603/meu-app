@@ -3,7 +3,7 @@ import './LoginButton.css'
 
 function LoginButton () {
 
-    const [loginAberto, setLoginAberto] = useState(false);
+    const [openLogin, setOpenLogin] = useState(false);
 
     useEffect(() => {
 
@@ -13,7 +13,7 @@ function LoginButton () {
         
         function closeModal(event: MouseEvent) {
             if (event.target === loginModal) {
-                setLoginAberto(false);
+                setOpenLogin(false);
             }
         }
     
@@ -22,13 +22,13 @@ function LoginButton () {
         return () => {
             loginModal.removeEventListener("click", closeModal);
         };
-    }, [loginAberto]);
+    }, [openLogin]);
 
     return (
         <div className="login__container">
-            <button id="login__button" onClick={() => setLoginAberto(true)}>Login</button> 
+            <button id="login__button" onClick={() => setOpenLogin(true)}>Login</button> 
 
-            {loginAberto && (
+            {openLogin && (
                 <div className="login__modal__container">
                     <div className="login__modal">
                         <div className= "login__content">
