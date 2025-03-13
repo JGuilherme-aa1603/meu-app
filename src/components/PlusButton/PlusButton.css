@@ -10,8 +10,23 @@
     height: 5rem;
     bottom: 5%;
     right: 2%;
-    background: linear-gradient(45deg, #2352FF, #a93fff);
+    background: radial-gradient(circle, #2352FF, #974dff);
+    background-size: 200% 200%;
+    animation: moveGradient-plus 5s infinite linear;
 }
+
+@keyframes moveGradient-plus {
+    0% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 250% 20%;
+    }
+    100% {
+        background-position: 50% 50%;
+    }
+}
+
 
 
 
