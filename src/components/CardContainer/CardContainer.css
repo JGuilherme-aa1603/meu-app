@@ -38,11 +38,11 @@
 {
     .card__container {
         grid-template-columns: 1fr 1fr;
-        margin: 7.8rem 5vw 0 5vw;
+        margin: 12vh 2vw 2vw 2vw;
     }
 
     .card__container div {
-        height: 8rem;
+        height: 15vh;
         font-size: 1rem;
     }
 }
