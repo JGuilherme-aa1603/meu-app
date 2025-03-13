@@ -84,4 +84,14 @@
         height: 4rem;
         bottom: 1%;
     }
+
+    .create__modal {
+        width: 85vw;
+        height: 50.5vh;
+    }
+
+    .create__content {
+        width: 84vw;
+        height: 50vh;
+    }
 }
