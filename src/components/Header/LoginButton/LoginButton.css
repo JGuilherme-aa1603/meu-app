@@ -1,0 +1,87 @@
+.login__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: radial-gradient(circle, #2352FF, #9f29ff);
+    background-size: 200% 200%;
+    animation: moveGradient-button 4s infinite linear;
+}
+
+@keyframes moveGradient-button {
+    0% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 250% 250%;
+    }
+}
+
+#login__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.8rem;
+    height: 2.8rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #212121;
+    border-radius: 1rem;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login__modal__container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.536);
+}
+
+.login__modal {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35.3rem;
+    height: 45.3rem;
+    border-radius: 1rem;
+    background: linear-gradient(45deg, #2352FF, #9f29ff);
+    background-size: 200% 200%;
+    animation: moveGradient-modal 4s infinite linear;
+}
+
+@keyframes moveGradient-modal {
+    0% {
+        background-position: 00% 50%;
+    }
+    100% {
+        background-position: 0% 250%;
+    }
+}
+
+
+.login__content {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 45rem;
+    border-radius: 1rem;
+    background-color: #212121;
+}

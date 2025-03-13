@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@svgr/plugin-svgo": "^8.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",
+    "css-select": "^5.1.0",
     "firebase": "^11.4.0",
     "nth-check": "^2.0.1",
-    "postcss": "^8.4.31",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "semver": "^7.7.1",
     "serialize-javascript": "^6.0.2",
+    "svgo": "^3.3.2",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
@@ -39,5 +44,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "@svgr/webpack": {
+      "nth-check": "2.1.1"
+    },
+    "resolve-url-loader": {
+      "postcss": "8.5.3"
+    }
   }
 }

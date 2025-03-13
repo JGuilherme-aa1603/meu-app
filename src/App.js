@@ -1,5 +1,6 @@
-import Header from './components/Header/Header';
-import CardContainer from './components/CardContainer/CardContainer';
+import Header from './components/Header/Header.tsx';
+import CardContainer from './components/CardContainer/CardContainer.tsx';
+import PlusButton from './components/PlusButton/PlusButton.tsx';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header />
       <CardContainer />
+      <PlusButton />
     </div>
   );
 }

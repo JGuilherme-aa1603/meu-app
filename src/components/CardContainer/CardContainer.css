@@ -5,14 +5,30 @@
 }
 
 .card__container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
   justify-content: space-around;
   padding: 2rem;
-  background-color: #f8f9fa;
-  width: 90%;
+  background-color: #212121;
+  width: 92%;
   min-height: 10rem;
-  height: 10rem;
-  margin-top: 2rem;
+  height: auto;
+  margin-top: 7.8rem;
+  border-radius: 1rem;
+}
+
+.card__container div {
+  display: flex;
+  height: 12rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #2352FF;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
 }
